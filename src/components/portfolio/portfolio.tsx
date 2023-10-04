@@ -14,8 +14,28 @@ import { useEffect } from "react"
 function Portfolio() {
   
   useEffect(() => {
-    AOS.init({duration:1000, delay: "100"});
+    AOS.init({ duration: 1000, delay: "100" });
   }, []);
+
+  const handleDiaryAppLink = () => {
+    window.open("https://github.com/navidasaman/diary-app", "_blank", "noopener noreferrer");
+  };
+
+  const handleHistoryAppLink = () => {
+    window.open("https://github.com/navidasaman/History-App", "_blank", "noopener noreferrer");
+  };
+
+  const handleToDoAppLink = () => {
+    window.open("https://github.com/navidasaman/ToDo-app", "_blank", "noopener noreferrer");
+  };
+
+  const handleTicTacToeLink = () => {
+    window.open("https://github.com/navidasaman/TicTacToe", "_blank", "noopener noreferrer");
+  };
+
+  const handleParallaxEffectLink = () => {
+    window.open("https://navidasaman.github.io/saman-parallax-effect/", "_blank", "noopener noreferrer");
+  };
 
   return (
     <div className='portfolioContainer'>
@@ -34,31 +54,31 @@ function Portfolio() {
       {/*Projects*/}
       <div className="scroll-container" data-aos="fade-left">
         <div className="container">
-          <img src={plannerapp} className="image" />
+          <img src={plannerapp} className="image" onClick={handleDiaryAppLink} />
           <div className="middle">
             <a href="https://github.com/navidasaman/diary-app" target="_blank" rel="noopener noreferrer"> Diary App <BsGithub /></a>
           </div>
         </div>
         <div className="container">
-          <img src={historyapp} className="image" />
-          <div className="middle">
+          <img src={historyapp} className="image" onClick={handleHistoryAppLink} />
+          <div className="middle" >
             <a href="https://github.com/navidasaman/History-App" target="_blank" rel="noopener noreferrer"> History App <BsGithub /></a>
           </div>
         </div>
         <div className="container">
-          <img src={todoapp} className="image" />
+          <img src={todoapp} className="image" onClick={handleToDoAppLink} />
           <div className="middle">
             <a href="https://github.com/navidasaman/ToDo-app" target="_blank" rel="noopener noreferrer"> To-Do App <BsGithub /></a>
           </div>
         </div>
         <div className="container">
-          <img src={tictactoe} className="image" />
+          <img src={tictactoe} className="image" onClick={handleTicTacToeLink} />
           <div className="middle">
             <a href="https://github.com/navidasaman/TicTacToe" target="_blank" rel="noopener noreferrer"> Tic Tac Toe <BsGithub /></a>
           </div>
         </div>
         <div className="container">
-          <img src={parallaxeffect} className="image" />
+          <img src={parallaxeffect} className="image" onClick={handleParallaxEffectLink} />
           <div className="middle">
             <a href="https://navidasaman.github.io/saman-parallax-effect/" target="_blank" rel="noopener noreferrer"> Parallax Effect Website </a>
           </div>
