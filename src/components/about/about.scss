@@ -5,7 +5,7 @@
    margin: auto;
    justify-content: center;
    padding: 2%;
-   animation: fadeInLeft .9s linear;
+   animation: fadeInLeft 1s linear;
    margin-top:8%;
 
    .introContainer {
@@ -22,7 +22,7 @@
       .title {
          font-size: 45px;
          font-weight: 300;
-         animation: fadeInTop 1.5s linear;
+         animation: fadeInTop 1s linear;
          margin: auto;
       }
 
@@ -36,7 +36,7 @@
          padding: 2%;
          font-style: italic;
          line-height: 2;
-         animation: fadeInLeft 1.5s linear;
+         animation: fadeInLeft 1s linear;
          margin-left: 2%;
       }
    }
