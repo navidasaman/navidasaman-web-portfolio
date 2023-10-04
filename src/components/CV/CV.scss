@@ -1,0 +1,40 @@
+$primary-color: #fff;
+$secondary-color: aqua;
+
+.portfolio {
+  margin-bottom: 5%;
+
+  .timelineHeading {
+    font-size: calc(45px - 1vw);
+    color: $secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 3%;
+    font-family: Lato;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 5%;
+  }
+
+  .vertical-timeline-element--work,
+  .vertical-timeline-element--education {
+    color: $primary-color;
+    font-family: Lato;
+    font-weight: 300;
+    letter-spacing: 3px;
+
+    p {
+      color: $secondary-color;
+    }
+
+    ul {
+      text-align: left;
+
+      li {
+        margin-top: 2%;
+      }
+    }
+  }
+}

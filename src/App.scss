@@ -1,0 +1,81 @@
+html {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  position: relative;
+  text-align: center;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-image: url('./img/stars.png');
+  height: fit-content;
+  width: 97vw;
+  display: flex;
+  flex-direction: column;
+
+  .twinklingStars {
+    position: absolute;
+    background-image: url('./img/twinklingStars.png');  
+    object-fit: contain;
+    z-index: 10;
+    animation: twinkle infinite 4.5s linear;
+    z-index: 1;
+    width: 100vw;
+    height: 85vh;
+    object-fit: fill;
+  }
+
+  .twinkl {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/twinkl.png');
+    object-fit: contain;
+    animation: twinkle infinite 2.5s linear;
+    width: max-content;
+    height: max-content;
+    width: 100vw;
+    height: 85vh;
+    object-fit: fill;
+    transform: rotate(180deg);
+
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1b2735;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #121a23fa;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px 5px rgba(246, 239, 229, 0.333);
+}
+
+/* hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #0a0f14fa;
+}
