@@ -6,7 +6,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     color: #fff;
-    z-index: 1000;
+    z-index: 1000000;
     width: 100vw;
     position: fixed;
 
@@ -42,25 +42,26 @@
             font-family: Lato;
             font-weight: 300;
             letter-spacing: 6px;
+            position: relative;
 
-            li:hover {
-                position: relative;
+            .nav-items:hover {
                 opacity: 0.7;
                 cursor: pointer;
-                transition: 0.5s ease-in-out;
-                color: #86bdf8;
+                color: aquamarine;
             }
 
-            li:hover::after {
+            .nav-items:hover::before {
+                width: 2.5%;
+            }
+
+            .nav-items::before {
                 content: "";
-                width: 33%;
-                height: 2px;
-                background-color: rgba(0, 255, 255, 0.512);
                 position: absolute;
-                bottom: -4px;
-                transition: 2s ease-in-out;
-                opacity: 0.7;
-                border-radius: 50%;
+                bottom: -5px;
+                width: 0%;
+                height: 2px;
+                background-color: aqua;
+                transition: width 0.3s;
             }
         }
     }
@@ -73,11 +74,9 @@
         display: block;
         position: fixed;
 
-
         .logo {
             display: none;
         }
-
 
         .toggle-btn {
             background-color: transparent;
@@ -95,15 +94,10 @@
 
             .nav-items {
                 height: 10vh;
+            }
 
-                .nav-items:hover {
-                    background-color: #ffffff4a;
-                }
-
-                .nav-items:hover::after {
-                    background-color: #ffffff4a;
-                    width: 0%;
-                }
+            .nav-items::before {
+                display: none;
             }
         }
     }
