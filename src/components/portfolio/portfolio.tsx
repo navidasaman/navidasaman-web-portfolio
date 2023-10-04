@@ -12,7 +12,7 @@ import "aos/dist/aos.css"
 import { useEffect } from "react"
 
 function Portfolio() {
-  
+
   useEffect(() => {
     AOS.init({ duration: 1000, delay: "100" });
   }, []);
@@ -89,7 +89,7 @@ function Portfolio() {
       </div>
       {/*Language/Frameworks/Libraries/Softwares Experience*/}
       <h3 className="Experience">Experience in:</h3>
-      <div className="skills">
+      <div className="skills" data-aos="fade-up">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
