@@ -7,8 +7,16 @@ import todoapp from './img/todoapp.png'
 import tictactoe from './img/tictactoe.png'
 import parallaxeffect from './img/parallaxeffect.png'
 import landingpage from './img/landingpage.png'
+import AOS from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 function Portfolio() {
+  
+  useEffect(() => {
+    AOS.init({duration:1000, delay: "100"});
+  }, []);
+
   return (
     <div className='portfolioContainer'>
       {/*Intro*/}
@@ -24,7 +32,7 @@ function Portfolio() {
         </a>
       </p>
       {/*Projects*/}
-      <div className="scroll-container">
+      <div className="scroll-container" data-aos="fade-left">
         <div className="container">
           <img src={plannerapp} className="image" />
           <div className="middle">
