@@ -121,11 +121,18 @@ $secondary-color: aqua;
         //box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
         scroll-behavior: smooth;
         border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .container {
             cursor: pointer;
             position: relative;
             padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: min(100%, 100vw);
 
             .image {
                 opacity: 1;
@@ -134,6 +141,7 @@ $secondary-color: aqua;
                 backface-visibility: hidden;
                 border-radius: 30px;
                 box-shadow: 0 3px 12px 0 #704a91;
+                width: min(250%, 510px);
             }
 
             .middle {
@@ -220,7 +228,6 @@ $secondary-color: aqua;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 5%;
     }
 
     .experienceIn {
@@ -292,3 +299,4 @@ $secondary-color: aqua;
         background: rgba(102, 0, 255, 0.095);
     }
 }
+

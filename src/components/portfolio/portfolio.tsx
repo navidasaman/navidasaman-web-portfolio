@@ -10,6 +10,7 @@ import landingpage from './img/landingpage.png'
 import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from "react"
+import Gallery from '../gallery/gallery';
 
 function Portfolio() {
 
@@ -56,6 +57,7 @@ function Portfolio() {
         </a>
       </p>
       {/*Projects*/}
+      {/*
       <div className="scroll-container" data-aos="fade-left">
         <div className="container">
           <img src={plannerapp} className="image" onClick={handleDiaryAppLink} alt="planner/diary react app made with typescript"/>
@@ -90,6 +92,9 @@ function Portfolio() {
         <div className="container">
           <img src={landingpage} className="image" alt="project landing page made with html and css"  />
         </div>
+      </div> */}
+      <div data-aos="fade-up">
+        < Gallery  />
       </div>
       {/*Language/Frameworks/Libraries/Softwares Experience*/}
       <div className="experienceInContainer">
