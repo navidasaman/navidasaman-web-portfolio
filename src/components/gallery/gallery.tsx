@@ -3,7 +3,6 @@ import '../portfolio/portfolio.scss'
 import "swiper/scss";
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
-import 'swiper/scss/scrollbar';
 import plannerapp from './img/plannerapp.png'
 import historyapp from './img/historyapp.png'
 import todoapp from './img/todoapp.png'
