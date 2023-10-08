@@ -50,7 +50,7 @@ export default function About() {
       </div>
       <div className="coderContainer">
         {showCoder && 
-          <img src={coder} className={`coder`} alt="picture of me"/>
+          <img src={coder} className={`coder`} alt="svg of a coder from undraw"/>
         }
 
       </div>
