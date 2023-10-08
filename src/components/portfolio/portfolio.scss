@@ -1,35 +1,44 @@
 $primary-color: #fff;
 $secondary-color: aqua;
 
-.portfolioContainer {
-    margin-top: 13%;
+@mixin font-scss {
     font-family: Lato;
     font-weight: 300;
     letter-spacing: 3px;
+}
+
+.portfolioContainer {
+    margin-top: 4%;
+    @include font-scss;
     color: $primary-color;
-    //background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    //-webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.022), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     padding: 3%;
-    margin-left: 3%;
     border-radius: 5px;
+    width: 97%;
 
     .portfolioHeading {
         font-size: calc(45px - 1vw);
         color: $secondary-color;
         display: flex;
         align-items: center;
-        justify-content: center;
+        //justify-content: center;
         position: relative;
     }
 
     .portfolioParagraph {
         width: 97%;
         margin: 2% auto;
-        text-align: justify;
+        text-align: left;
         line-height: 2rem;
+
+        a {
+            margin-left: -10px;
+        }
+
     }
 
     .skills {
@@ -37,6 +46,8 @@ $secondary-color: aqua;
         flex-wrap: wrap;
         width: 84%;
         margin: auto;
+        // animation: bgChange 3s infinite alternate linear;
+
 
         img {
             height: 60px;
@@ -68,7 +79,7 @@ $secondary-color: aqua;
         font-size: 20px;
         color: $secondary-color;
         list-style: none;
-        display: block;
+        // display: inline-flex;
         margin-top: 1%;
         font-family: Lato;
         font-weight: 300;
@@ -82,7 +93,7 @@ $secondary-color: aqua;
         background: linear-gradient(135deg, rgba(78, 31, 103, 0.1), rgba(54, 4, 116, 0));
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-       // box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        // box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
         scroll-behavior: smooth;
     }
 
@@ -90,14 +101,14 @@ $secondary-color: aqua;
         width: 15px;
         background-color: #1b2735;
         border-radius: 10px;
-      }
-      
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #8d6b97fa ;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #8d6b97fa;
         border-radius: 10px;
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
-      }
+    }
 
     div.scroll-container {
         overflow: auto;
@@ -136,7 +147,7 @@ $secondary-color: aqua;
                 text-align: center;
                 z-index: 1;
                 background-color: rgba(0, 0, 0, 0.5);
-                border:1px solid aqua;
+                border: 1px solid aqua;
                 color: white;
                 padding: 16px;
                 border-radius: 10px;
@@ -160,5 +171,124 @@ $secondary-color: aqua;
             color: $secondary-color;
             text-decoration: none;
         }
+    }
+
+    // portfolio heading
+    .heading {
+        width: 100%;
+        height: 100%;
+    }
+
+    .heading text {
+        animation: headingLines 6s infinite alternate;
+        stroke-width: 1;
+        stroke: $secondary-color;
+        font-size: 80px;
+        text-anchor:middle;
+    }
+
+    @keyframes headingLines {
+        0% {
+            fill: rgba(0, 0, 0, 0);
+            stroke: $secondary-color;
+            stroke-dashoffset: 25%;
+            stroke-dasharray: 0 20%;
+            stroke-width: 1;
+        }
+
+        70% {
+            fill: rgba(0, 0, 0, 0);
+            stroke: $secondary-color;
+        }
+
+        80% {
+            fill: rgba(0, 0, 0, 0);
+            stroke: $secondary-color;
+            stroke-width: 2;
+        }
+
+        100% {
+            fill: $primary-color;
+            stroke: rgba(0, 0, 0, 0);
+            stroke-dashoffset: -25%;
+            stroke-dasharray: 50% 0;
+            stroke-width: 0;
+        }
+    }
+
+    .experienceInContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .experienceIn {
+        position: relative;
+        font-size: 20px;
+        color: $primary-color;
+        z-index: 1;
+        text-align: left;
+        @include font-scss;
+    }
+
+    .experienceIn:before,
+    .experienceIn:after {
+        display: flex;
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experienceIn:before {
+        animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+        color: $secondary-color;
+        z-index: -1;
+    }
+
+    .experienceIn:after {
+        animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+        color: #ff1dff;
+        z-index: -2;
+    }
+
+    @keyframes glitch {
+        0% {
+            transform: translate(0);
+        }
+
+        20% {
+            transform: translate(-2px, 2px);
+        }
+
+        40% {
+            transform: translate(-2px, -2px);
+        }
+
+        60% {
+            transform: translate(2px, 2px);
+        }
+
+        80% {
+            transform: translate(2px, -2px);
+        }
+
+        to {
+            transform: translate(0);
+        }
+    }
+}
+
+@keyframes bgChange {
+    0% {
+        background: rgba(79, 172, 247, 0.1);
+    }
+
+    100% {
+        background: rgba(102, 0, 255, 0.095);
     }
 }
