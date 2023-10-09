@@ -11,20 +11,20 @@ const Loader: React.FC = () => {
       <div className='infoContainer'>
         <div className='name'>Navida Saman</div>
         <div className='workTitle'>Web Developer
-        <span className='loadingDots'>
-            <Typewriter
-            options={{
-                autoStart: true,
-                loop: true,
-            }}
-            onInit={(typewriter) => {
-            typewriter
-                .typeString("...")
-                .deleteAll()
-                .start();
-            }}
-            />
-        </span>
+          <span className='loadingDots'>
+              <Typewriter
+              options={{
+                  autoStart: true,
+                  loop: true,
+              }}
+              onInit={(typewriter) => {
+              typewriter
+                  .typeString("...")
+                  .deleteAll()
+                  .start();
+              }}
+              />
+          </span>
         </div> 
         </div>        
       </div>

@@ -61,7 +61,6 @@ function Portfolio() {
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-plain-wordmark.svg" alt="visual studio code icon svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original-wordmark.svg" alt="android studio code icon svg" />
-
       </div>
     </div>
   )
