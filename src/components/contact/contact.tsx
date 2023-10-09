@@ -13,7 +13,7 @@ function Contact() {
 		setName('');
 		setEmail('');
 		setMessage('');
-		alert(`I apologise for the inconvenience, service is not working at the moment and is under maintenence. I advise you to please contact me through my Linkedin. I hope you have a great day!`);
+		alert("I apologise for the inconvenience, service is not working at the moment and is under maintenence. I advise you to please contact me through my Linkedin. I hope you have a great day!");
 	};
 
 	return (
