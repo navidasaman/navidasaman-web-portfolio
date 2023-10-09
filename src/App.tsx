@@ -5,6 +5,9 @@ import Portfolio from './components/portfolio/portfolio';
 import CV from './components/CV/CV';
 import Contact from './components/contact/contact'
 import Footer from "./components/footer/footer";
+import Loader from "./components/loader/loader";
+import {useState, useEffect} from 'react';
+
 
 function App() {
   const scrollTo = (elementRef: React.RefObject<HTMLElement>) => {
@@ -15,6 +18,20 @@ function App() {
       });
     }
   };
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); 
+    
+    
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <div className="App">
