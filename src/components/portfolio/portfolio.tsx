@@ -1,12 +1,6 @@
 import "./portfolio.scss"
 import { BsGithub } from 'react-icons/bs'
 import cpp from './img/Cpp.png'
-import plannerapp from './img/plannerapp.png'
-import historyapp from './img/historyapp.png'
-import todoapp from './img/todoapp.png'
-import tictactoe from './img/tictactoe.png'
-import parallaxeffect from './img/parallaxeffect.png'
-import landingpage from './img/landingpage.png'
 import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from "react"
