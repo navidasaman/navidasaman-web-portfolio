@@ -3,7 +3,6 @@ import me from "./linkedinbw.png"
 import coder from "./undraw_proud_coder_re_exuy.svg"
 import Typewriter from "typewriter-effect";
 import {useState, useEffect} from 'react'
-import { Helmet } from "react-helmet-async";
 
 export default function About() {
 
@@ -25,11 +24,6 @@ export default function About() {
 
   return (
     <div className="aboutContainer">
-      <Helmet>
-        <title>Navida Saman Web Portfolio</title>
-        <meta name="description" content="Hi, I'm Saman! I'm a Web developer making the web an interesting and harmonius place to browse, enhancing user experience through effective design and pleasant experiences."/>
-        <link rel='canonical' href='/' />
-      </Helmet>
       <div className="twinklingStars"></div>
       <div className="twinkl"></div>
       <div className="introContainer">

@@ -7,6 +7,7 @@ import Contact from './components/contact/contact'
 import Footer from "./components/footer/footer";
 import Loader from "./components/loader/loader";
 import {useState, useEffect} from 'react';
+import { Helmet } from 'react-helmet-async';
 
 function App() {
   const scrollTo = (elementRef: React.RefObject<HTMLElement>) => {
@@ -34,6 +35,10 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Navida Saman Ul Haq Web Portfolio</title>
+        <meta name="description" content="Hi, I'm Saman: a Web developer making the web an interesting and harmonius place to browse, enhancing user experience through effective design and pleasant experiences."/>
+      </Helmet>
       <Navbar scrollTo={scrollTo} />
       <div className="home"><About /></div>
       <div className="portfolio"><Portfolio /></div>
