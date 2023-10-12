@@ -36,3 +36,5 @@ src/components/portfolio/Cpp.png
 public/laptop.png
 src/components/CV/CV.tsx
 *.png
+.env
+public/index.html
