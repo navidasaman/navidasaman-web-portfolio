@@ -8,7 +8,6 @@ import Footer from "./components/footer/footer";
 import Loader from "./components/loader/loader";
 import {useState, useEffect} from 'react';
 
-
 function App() {
   const scrollTo = (elementRef: React.RefObject<HTMLElement>) => {
     if (elementRef.current) {
