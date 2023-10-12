@@ -41,7 +41,7 @@ function Contact() {
 
 	return (
 		<div className="formContainer">
-			<ToastContainer style={{marginTop:"3%", fontSize:"15px", textAlign:"left", letterSpacing:"0px", color:"black"}} />
+			<ToastContainer position="bottom-right" style={{marginTop:"3%", fontSize:"15px", textAlign:"left", letterSpacing:"0px", color:"black"}} />
 			<form ref={form} onSubmit={handleSubmit} className="contactForm">
 				<h1>Contact.</h1>
 				<input className="formInput" type="text" name="name" id="name" placeholder='Name' onChange={(e) => setName(e.target.value)} value={name} />

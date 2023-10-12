@@ -76,9 +76,3 @@ form .formInput, textarea {
     display: flex;
     justify-content: baseline;
 }
-
-@media (width < 900px) {
-    .Toastify__toast{
-        margin-top:11% !important;
-    }
-}
