@@ -20,12 +20,12 @@ function Portfolio() {
           Portfolio 
         </text>
       </svg>
-      <p className="portfolioParagraph"> I am driven by my passion for creating exceptional online experiences.
+      <p className="portfolioParagraph" data-aos="fade-up"> I am driven by my passion for creating exceptional online experiences.
         With a genuine interest in understanding technology and people.
         I strive to deliver innovative and user-friendly websites that leave a lasting impact.
         I believe in the power of technology to connect people and enhance their lives, and I am dedicated to bringing that vision to life through my coding skills and attention to detail.
         With every project, I approach it with excitement and a commitment to excellence, ensuring that the final product exceeds expectations. </p>
-      <p className="portfolioParagraph">Here are some of the projects I've worked on. Feel free to scroll through them. To see more visit my: 
+      <p className="portfolioParagraph" data-aos="fade-up">Here are some of the projects I've worked on. Feel free to scroll through them. To see more visit my: 
         <a className='linkSocials' href="https://github.com/navidasaman/" target="_blank" rel="noopener noreferrer">
           GitHub <BsGithub />
         </a>
