@@ -5,8 +5,14 @@ import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from "react"
 import Gallery from '../gallery/gallery';
+import { styled } from '@mui/material/styles';
+import Divider from '@mui/material/Divider';
+
 
 function Portfolio() {
+  const Root = styled('div')(() => ({
+    width: '100%',
+  }));
 
   useEffect(() => {
     AOS.init({ duration: 1000, delay: "100" });
@@ -17,7 +23,7 @@ function Portfolio() {
       {/*Intro*/}
       <svg className="heading">
         <text x="50%" y="50%" dy=".5em">
-          Portfolio 
+          Portfolio
         </text>
       </svg>
       <p className="portfolioParagraph" data-aos="fade-up"> I am driven by my passion for creating exceptional online experiences.
@@ -25,18 +31,30 @@ function Portfolio() {
         I strive to deliver innovative and user-friendly websites that leave a lasting impact.
         I believe in the power of technology to connect people and enhance their lives, and I am dedicated to bringing that vision to life through my coding skills and attention to detail.
         With every project, I approach it with excitement and a commitment to excellence, ensuring that the final product exceeds expectations. </p>
-      <p className="portfolioParagraph" data-aos="fade-up">Here are some of the projects I've worked on. Feel free to scroll through them. To see more visit my: 
+      <p className="portfolioParagraph" data-aos="fade-up">Here are some of the projects I've worked on. Feel free to scroll through them. To see more visit my:
         <a className='linkSocials' href="https://github.com/navidasaman/" target="_blank" rel="noopener noreferrer">
           GitHub <BsGithub />
         </a>
       </p>
       {/*Projects*/}
-      <div data-aos="fade-up">
-        < Gallery  />
+      <div className="gallery" data-aos="fade-up">
+        < Gallery />
       </div>
+      {/* <hr style={{ backgroundColor: 'aqua', marginTop: '5%', borderRadius: '50%', opacity: '0.1' }} /> */}
       {/*Language/Frameworks/Libraries/Softwares Experience*/}
       <div className="experienceInContainer">
-        <h3 className="experienceIn" data-text="Experience in:">Experience in:</h3>
+        <Root>
+          <Divider sx={{
+            "&::before, &::after": {
+              borderColor: "#fff",
+              opacity: '0.15',
+              borderRadius: '40%',
+              height: 2,
+            },
+          }}>
+            <h3 className="experienceIn" data-text="Experience in:">Experience in:</h3>
+          </Divider>
+        </Root>
       </div>
       <div className="skills" data-aos="fade-up">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="html5 icon svg" />
@@ -56,7 +74,7 @@ function Portfolio() {
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" alt="git icon svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="github icon svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg" alt="filezilla icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"  alt="markdown icon svg"  />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" alt="markdown icon svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-plain-wordmark.svg" alt="inkscape icon svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-plain-wordmark.svg" alt="visual studio code icon svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="express.js icon svg" />
