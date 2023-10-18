@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/navidasaman-web-portfolio/static/css/main.5f236296.css",
-    "main.js": "/navidasaman-web-portfolio/static/js/main.39ab8f41.js",
+    "main.js": "/navidasaman-web-portfolio/static/js/main.d68e5a28.js",
     "static/js/787.bea73f34.chunk.js": "/navidasaman-web-portfolio/static/js/787.bea73f34.chunk.js",
     "static/media/linkedinbw.png": "/navidasaman-web-portfolio/static/media/linkedinbw.b262192c6cf0acea472e.png",
-    "static/media/plannerapp.png": "/navidasaman-web-portfolio/static/media/plannerapp.ca3cbc0b9d2e9450f296.png",
-    "static/media/historyapp.png": "/navidasaman-web-portfolio/static/media/historyapp.0cc3285a8dcafe7744a4.png",
-    "static/media/parallaxeffect.png": "/navidasaman-web-portfolio/static/media/parallaxeffect.ff38b0bb2bf52201d3ea.png",
-    "static/media/landingpage.png": "/navidasaman-web-portfolio/static/media/landingpage.83aaec9129b93c421b34.png",
-    "static/media/todoapp.png": "/navidasaman-web-portfolio/static/media/todoapp.b7aab7a31936772ce5ab.png",
-    "static/media/tictactoe.png": "/navidasaman-web-portfolio/static/media/tictactoe.416373d26e0980be001c.png",
+    "static/media/a.png": "/navidasaman-web-portfolio/static/media/a.3c534cd47ecd1ef147a0.png",
+    "static/media/f.png": "/navidasaman-web-portfolio/static/media/f.bb683e271b5722579450.png",
+    "static/media/c.png": "/navidasaman-web-portfolio/static/media/c.8ab0510ba211ebfb6a05.png",
+    "static/media/b.png": "/navidasaman-web-portfolio/static/media/b.56fe5222dec7c05ea2e7.png",
+    "static/media/d.png": "/navidasaman-web-portfolio/static/media/d.6f28b8a8b05285dedced.png",
+    "static/media/e.png": "/navidasaman-web-portfolio/static/media/e.2e58844385711c109cd3.png",
     "static/media/Cpp.png": "/navidasaman-web-portfolio/static/media/Cpp.78524bb825a11460185a.png",
     "static/media/undraw_proud_coder_re_exuy.svg": "/navidasaman-web-portfolio/static/media/undraw_proud_coder_re_exuy.750b5c6ed518357f67de0dbf596d113e.svg",
     "static/media/stars.png": "/navidasaman-web-portfolio/static/media/stars.c8d3f25247e4c0b6c7d5.png",
     "static/media/cursor32.svg": "/navidasaman-web-portfolio/static/media/cursor32.5db46480fdd3cc5731f4.svg",
     "index.html": "/navidasaman-web-portfolio/index.html",
     "main.5f236296.css.map": "/navidasaman-web-portfolio/static/css/main.5f236296.css.map",
-    "main.39ab8f41.js.map": "/navidasaman-web-portfolio/static/js/main.39ab8f41.js.map",
+    "main.d68e5a28.js.map": "/navidasaman-web-portfolio/static/js/main.d68e5a28.js.map",
     "787.bea73f34.chunk.js.map": "/navidasaman-web-portfolio/static/js/787.bea73f34.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f236296.css",
-    "static/js/main.39ab8f41.js"
+    "static/js/main.d68e5a28.js"
   ]
 }
