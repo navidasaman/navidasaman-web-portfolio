@@ -42,7 +42,7 @@ export default function About() {
     <div className="aboutContainer">
       <div className="twinklingStars"></div>
       <div className="twinkl"></div>
-      <div className="introContainer">
+      <div className="introContainer" data-aos="fade-right">
         <h1 className='title'>
           <Typewriter
             onInit={(typewriter) => {
@@ -68,7 +68,7 @@ export default function About() {
         </div>
 
       </div>
-      <div className="coderContainer">
+      <div className="coderContainer" data-aos="fade-left">
         {showCoder &&
           <img src={coder} className={`coder`} alt="svg of a coder from undraw" />
         }
