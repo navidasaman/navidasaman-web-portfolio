@@ -2,11 +2,14 @@ import "./about.scss"
 import me from "./linkedinbw.png"
 import coder from "./undraw_proud_coder_re_exuy.svg"
 import Typewriter from "typewriter-effect";
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 export default function About() {
 
   const [showCoder, setShowCoder] = useState(window.innerWidth < 900 ? false : true);
+
+  const words: string[] = [' interesting ', ' harmonious ', ' userfriendly '];
+  const [word, setWord] = useState<string>(words[0]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,6 +24,19 @@ export default function About() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Get the index of the next word in the array
+      const currentIndex: number = words.findIndex((w) => w === word);
+      const nextIndex: number = (currentIndex + 1) % words.length;
+
+      // Update the word state with the next word
+      setWord(words[nextIndex]);
+    }, 3000);
+
+    // Cleanup the interval when the component unmounts or the dependencies change
+    return () => clearInterval(interval);
+  }, [word]);
 
   return (
     <div className="aboutContainer">
@@ -28,18 +44,22 @@ export default function About() {
       <div className="twinkl"></div>
       <div className="introContainer">
         <h1 className='title'>
-        <Typewriter
-          onInit={(typewriter) => {
-          typewriter
-            .typeString("Hi! I'm Saman...")
-            .pauseFor(1000)
-            .deleteAll()
-            .typeString("Welcome!")
-            .start();
-        }}
-        />
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Hi! I'm Saman...")
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString("Welcome!")
+                .start();
+            }}
+          />
         </h1>
-        <div className="intro">I'm a Web developer making the web an interesting and harmonius place to browse, enhancing user experience through effective design and pleasant experiences. Let me take you on a trip.</div>
+        <div className="intro">I'm a Web developer making the web an
+          <span className="words"> 
+            {word}
+          </span>
+          place to browse, enhancing user experience through effective design and pleasant experiences. Let me take you on a trip.</div>
         <div className="info">
           <img src={me} className="me" alt="picture of me" />
           <p>Navida Saman</p>
@@ -49,12 +69,12 @@ export default function About() {
 
       </div>
       <div className="coderContainer">
-        {showCoder && 
-          <img src={coder} className={`coder`} alt="svg of a coder from undraw"/>
+        {showCoder &&
+          <img src={coder} className={`coder`} alt="svg of a coder from undraw" />
         }
 
       </div>
-      
+
     </div>
   )
 }

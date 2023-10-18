@@ -26,6 +26,12 @@
          margin: auto;
       }
 
+      .words {
+         color: aqua;
+         font-weight: bold;
+         animation: fade-in 3s infinite;
+      }
+
       .intro {
          color: #fff;
          font-family: Lato;
@@ -198,3 +204,15 @@
       }
    }
 }
+
+@keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
+ }
