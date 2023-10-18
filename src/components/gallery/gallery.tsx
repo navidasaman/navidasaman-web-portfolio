@@ -3,12 +3,12 @@ import '../portfolio/portfolio.scss';
 import "swiper/scss";
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
-import plannerapp from "./img/plannerapp.png";
-import historyapp from "./img/historyapp.png";
-import todoapp from "./img/todoapp.png";
-import tictactoe from "./img/tictactoe.png";
-import parallaxeffect from "./img/parallaxeffect.png";
-import landingpage from "./img/landingpage.png";
+import plannerapp from "./img/a.png";
+import historyapp from "./img/c.png";
+import todoapp from "./img/d.png";
+import tictactoe from "./img/e.png";
+import parallaxeffect from "./img/f.png";
+import landingpage from "./img/b.png";
 import { BsGithub, BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
