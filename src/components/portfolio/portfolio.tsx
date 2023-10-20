@@ -1,13 +1,15 @@
 import "./portfolio.scss"
 import { BsGithub } from 'react-icons/bs'
 import cpp from './img/Cpp.png'
+import restapi from './img/REST.png'
+import postman from './img/Postman.png'
 import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from "react"
 import Gallery from '../gallery/gallery';
 import { styled } from '@mui/material/styles';
 import Divider from '@mui/material/Divider';
-
+import Tooltip from '@mui/material/Tooltip';
 
 function Portfolio() {
   const Root = styled('div')(() => ({
@@ -57,28 +59,32 @@ function Portfolio() {
         </Root>
       </div>
       <div className="skills" data-aos="fade-up">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="html5 icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="css3 icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="javascript icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" alt="typescript icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" alt="mysql icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="java icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="php icon svg" />
-        <img src={cpp} alt="C++ icon" ></img>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="TailwindCSS icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" alt="d3.js icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" alt="git icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="github icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg" alt="filezilla icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" alt="markdown icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-plain-wordmark.svg" alt="inkscape icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-plain-wordmark.svg" alt="visual studio code icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="express.js icon svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original-wordmark.svg" alt="android studio code icon svg" />
+        <Tooltip title="HTML" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="html5 icon svg" /></Tooltip>
+        <Tooltip title="CSS" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="css3 icon svg" /></Tooltip>
+        <Tooltip title="JavaScript" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="javascript icon svg" /></Tooltip>
+        <Tooltip title="TypeScript" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" alt="typescript icon svg" /></Tooltip>
+        <Tooltip title="React" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react icon svg" /></Tooltip>
+        <Tooltip title="MySQL" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" alt="mysql icon svg" /></Tooltip>
+        <Tooltip title="Node.js" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs icon svg" /></Tooltip>
+        <Tooltip title="Java" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="java icon svg" /></Tooltip>
+        <Tooltip title="PHP" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="php icon svg" /></Tooltip>
+        <Tooltip title="C++" arrow><img src={cpp} alt="C++ icon" ></img></Tooltip>
+        <Tooltip title="SASS/SCSS" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass icon svg" /></Tooltip>
+        <Tooltip title="Bootstrap" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap icon svg" /></Tooltip>
+        <Tooltip title="TailwindCSS" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="TailwindCSS icon svg" /></Tooltip>
+        <Tooltip title="D3.js" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" alt="d3.js icon svg" /></Tooltip>
+        <Tooltip title="Git" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" alt="git icon svg" /></Tooltip>
+        <Tooltip title="GitHub" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="github icon svg" /></Tooltip>
+        <Tooltip title="FileZilla" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg" alt="filezilla icon svg" /></Tooltip>
+        <Tooltip title="Markdown" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" alt="markdown icon svg" /></Tooltip>
+        <Tooltip title="InkScape" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-plain-wordmark.svg" alt="inkscape icon svg" /></Tooltip>
+        <Tooltip title="Visual Studio Code" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-plain-wordmark.svg" alt="visual studio code icon svg" /></Tooltip>
+        <Tooltip title="ExpressJS" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="express.js icon svg" /></Tooltip>
+        <Tooltip title="Android Studio" arrow><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original-wordmark.svg" alt="android studio code icon svg" /></Tooltip>
+        <Tooltip title="Postman" arrow><img src={postman} alt="postman icon" ></img></Tooltip>
+        <Tooltip title="RESTful API" arrow><img src={restapi} alt="resp icon" ></img></Tooltip>
+        
+
       </div>
     </div>
   )
