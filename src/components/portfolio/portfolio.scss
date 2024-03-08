@@ -32,8 +32,9 @@ $secondary-color: aqua;
     .portfolioParagraph {
         width: 97%;
         margin: 2% auto;
-        text-align: left;
         line-height: 2rem;
+        text-align: justify;
+        text-justify: inter-word;
 
         a {
             margin-left: -10px;
@@ -77,16 +78,54 @@ $secondary-color: aqua;
         text-align: center;
         text-decoration: none;
         font-size: 20px;
-        color: $secondary-color;
+        background-color: $secondary-color;
+        color: #1b2735;
         list-style: none;
+        border: none;
         // display: inline-flex;
-        margin-top: 1%;
         font-family: Lato;
         font-weight: 300;
         letter-spacing: 3px;
-        margin-left: -15px;
-        padding: 0 3.3%;
+        padding: 1%;
     }
+
+    .button {
+        width: fit-content;
+        font-size:20px;
+        display: flex;
+        align-items: center;
+        margin:auto;
+        cursor: pointer;
+        @include font-scss;
+        border-radius: 5px;
+        background: linear-gradient(15deg,aqua, aquamarine, #1b2735, #090a0f) no-repeat;
+        background-size: 300%;
+        color: black;
+        border: none;
+        background-position: left center;
+        box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+        transition: background .3s ease;
+        padding: min(100%, 1%);
+        margin-top: 1%;
+
+        span {
+            align-items: center;
+            justify-content: center;
+        }
+        .icon {
+            margin-top: 4px;
+            margin-left: 5px;
+        }
+           
+      }
+      
+      .button:hover {
+        background-size: 320%;
+        background-position: right center;
+        color: $primary-color;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
 
     ::-webkit-scrollbar {
         width: 5px !important;
@@ -235,6 +274,7 @@ $secondary-color: aqua;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 5%;
     }
 
     .experienceIn {

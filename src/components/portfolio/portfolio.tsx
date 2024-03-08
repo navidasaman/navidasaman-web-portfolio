@@ -20,6 +20,10 @@ function Portfolio() {
     AOS.init({ duration: 1000, delay: "100" });
   }, []);
 
+  const handleGithubLink = () => {
+    window.open("https://github.com/navidasaman", "_blank", "noopener noreferrer");
+  };
+
   return (
     <div className='portfolioContainer'>
       {/*Intro*/}
@@ -33,15 +37,15 @@ function Portfolio() {
         I strive to deliver innovative and user-friendly websites that leave a lasting impact.
         I believe in the power of technology to connect people and enhance their lives, and I am dedicated to bringing that vision to life through my coding skills and attention to detail.
         With every project, I approach it with excitement and a commitment to excellence, ensuring that the final product exceeds expectations. </p>
-      <p className="portfolioParagraph" data-aos="fade-up">Here are some of the projects I've worked on. Feel free to scroll through them. To see more visit my:
-        <a className='linkSocials' href="https://github.com/navidasaman/" target="_blank" rel="noopener noreferrer">
-          GitHub <BsGithub />
-        </a>
-      </p>
+
       {/*Projects*/}
       <div className="gallery" data-aos="fade-up">
         < Gallery />
       </div>
+      <p className="portfolioParagraphB">Here are some of the projects I've worked on. Feel free to scroll through them. To see more visit my:</p>
+       <button onClick={handleGithubLink} className="button">
+          <span className="text">GitHub |</span> <span className="icon"> <BsGithub  /></span>        
+      </button> 
       {/* <hr style={{ backgroundColor: 'aqua', marginTop: '5%', borderRadius: '50%', opacity: '0.1' }} /> */}
       {/*Language/Frameworks/Libraries/Softwares Experience*/}
       <div className="experienceInContainer">
