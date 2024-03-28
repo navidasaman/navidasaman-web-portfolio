@@ -9,6 +9,7 @@ import todoapp from "./img/d.png";
 import tictactoe from "./img/e.png";
 import parallaxeffect from "./img/f.png";
 import landingpage from "./img/b.png";
+import thoughtsquare from "./img/ts.png";
 import employeeManagementSystem from "./img/g.png";
 import { BsGithub, BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
@@ -48,6 +49,11 @@ const projects = [
 		image: employeeManagementSystem,
 		link: "https://github.com/navidasaman/FullstackJavaReact",
 		title: "Employee Management System",
+	},
+	{
+		image: thoughtsquare,
+		link: "https://thought-square.vercel.app/",
+		title: "Thought Square",
 	},
 ];
 
