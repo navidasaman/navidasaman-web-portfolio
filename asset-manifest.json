@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/navidasaman-web-portfolio/static/css/main.6b82da6d.css",
-    "main.js": "/navidasaman-web-portfolio/static/js/main.49f0931b.js",
+    "main.css": "/navidasaman-web-portfolio/static/css/main.b3ee6b95.css",
+    "main.js": "/navidasaman-web-portfolio/static/js/main.d44dbea7.js",
     "static/js/787.bea73f34.chunk.js": "/navidasaman-web-portfolio/static/js/787.bea73f34.chunk.js",
     "static/media/linkedinbw.png": "/navidasaman-web-portfolio/static/media/linkedinbw.b262192c6cf0acea472e.png",
     "static/media/ts.png": "/navidasaman-web-portfolio/static/media/ts.5ba28c7c18b83e431012.png",
@@ -19,12 +19,12 @@
     "static/media/stars.png": "/navidasaman-web-portfolio/static/media/stars.c8d3f25247e4c0b6c7d5.png",
     "static/media/cursor32.svg": "/navidasaman-web-portfolio/static/media/cursor32.5db46480fdd3cc5731f4.svg",
     "index.html": "/navidasaman-web-portfolio/index.html",
-    "main.6b82da6d.css.map": "/navidasaman-web-portfolio/static/css/main.6b82da6d.css.map",
-    "main.49f0931b.js.map": "/navidasaman-web-portfolio/static/js/main.49f0931b.js.map",
+    "main.b3ee6b95.css.map": "/navidasaman-web-portfolio/static/css/main.b3ee6b95.css.map",
+    "main.d44dbea7.js.map": "/navidasaman-web-portfolio/static/js/main.d44dbea7.js.map",
     "787.bea73f34.chunk.js.map": "/navidasaman-web-portfolio/static/js/787.bea73f34.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b82da6d.css",
-    "static/js/main.49f0931b.js"
+    "static/css/main.b3ee6b95.css",
+    "static/js/main.d44dbea7.js"
   ]
 }
