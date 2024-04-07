@@ -10,7 +10,7 @@ const Loader: React.FC = () => {
       <CircleLoader size={53} color={'aqua'} loading={true} />
       <div className='infoContainer'>
         <div className='name'>Navida Saman</div>
-        <div className='workTitle'>Web Developer
+        <div className='workTitle'>Fullstack Developer
           <span className='loadingDots'>
               <Typewriter
               options={{

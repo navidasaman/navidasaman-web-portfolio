@@ -8,7 +8,7 @@ export default function About() {
 
   const [showCoder, setShowCoder] = useState(window.innerWidth < 900 ? false : true);
 
-  const words: string[] = [' interesting ', ' harmonious ', ' userfriendly '];
+  const words: string[] = [' captivating ', ' interactive ', ' userfriendly ', ' engaging ', ' innovative '];
   const [word, setWord] = useState<string>(words[0]);
 
   useEffect(() => {
@@ -55,15 +55,15 @@ export default function About() {
             }}
           />
         </h1>
-        <div className="intro">I'm a Web developer making the web an
+        <div className="intro">I'm a fullstack developer making the web a
           <span className="words"> 
             {word}
           </span>
-          place to browse, enhancing user experience through effective design and pleasant experiences. Let me take you on a trip.</div>
+          place to browse, enhancing user experience through effective design and pleasant experiences by bridging the gap between frontend and backend technologies to leave a lasting impression and bringing ideas to life.</div>
         <div className="info">
           <img src={me} className="me" alt="picture of me" />
           <p>Navida Saman</p>
-          <p>Web developer</p>
+          <p>Fullstack Developer</p>
           <p>Greater Gothenburg Metropolitan Area</p>
         </div>
 
