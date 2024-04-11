@@ -64,7 +64,6 @@ function Portfolio() {
         I strive to deliver innovative and user-friendly websites that leave a lasting impact.
         I believe in the power of technology to connect people and enhance their lives, and I am dedicated to bringing that vision to life through my coding skills and attention to detail.
         With every project, I approach it with excitement and a commitment to excellence, ensuring that the final product exceeds expectations. </p>
-
       {/*Projects*/}
       <div className="gallery" data-aos="fade-up">
         < Gallery />
@@ -89,7 +88,8 @@ function Portfolio() {
           </Divider>
         </Root>
       </div>
-      <div className="skills" data-aos="fade-up">
+      {/*Skills*/}
+      <div className="skills">
         {skills.map((skill, index) => (
           <Tooltip key={index} title={skill.title} arrow>
             <img src={skill.icon} alt={skill.alt} />
