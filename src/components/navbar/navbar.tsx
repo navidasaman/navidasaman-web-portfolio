@@ -9,11 +9,9 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ scrollTo }) => {
   const [isNavOpen, setIsNavOpen] = useState(true);
-  const [isResponsive, setIsResponsive] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
-    setIsResponsive(!isResponsive);
   };
 
   const home = useRef<HTMLElement>(null);
@@ -21,36 +19,34 @@ const Navbar: React.FC<NavbarProps> = ({ scrollTo }) => {
   const contact = useRef<HTMLElement>(null);
   const cv = useRef<HTMLElement>(null);
 
-  return (
-    <div>
-      <div className={`navContainer ${isNavOpen ? 'open' : 'responsive'}`}>
-        <nav className='navbar'>
-          <a href="#home" className="logo"> 
-            <span className="pre-logo"><BsChevronLeft/></span>
-              <Link to="home" smooth={true} duration={1000} onClick={() => scrollTo(home)}>navidasaman</Link>
-            <span className="pre-logo"><BsChevronRight/></span>
-          </a>
-          <ul className={`${isNavOpen ? 'open' : 'responsive'}`}>
-            <li className="nav-items">
-              <Link to="home" smooth={true} duration={1000} onClick={() => scrollTo(home)}>Home</Link>
-            </li>
-            <li className="nav-items">
-              <Link to="portfolio" smooth={true} duration={1000} onClick={() => scrollTo(portfolio)}>Portfolio</Link>            
-            </li>
-            <li className="nav-items">
-              <Link to="cv" smooth={true} duration={1000} onClick={() => scrollTo(cv)}>CV</Link>            
-            </li>
-            <li className="nav-items">
-              <Link to="contact" smooth={true} duration={1000} onClick={() => scrollTo(contact)}>Contact</Link>            
-            </li>
-          </ul>
-          <div>
-            <button className="toggle-btn" onClick={toggleNav}>{isNavOpen ? <BsList /> : <BsXLg />}</button>
-          </div>
-        </nav>
-      </div>
-    </div> 
-  )
-}
+  const links = [
+    { text: "Home", ref: "home" },
+    { text: "Portfolio", ref: "portfolio" },
+    { text: "CV", ref: "cv" },
+    { text: "Contact", ref: "contact" }
+  ];
 
-export default Navbar
+  return (
+    <div className={`navContainer ${isNavOpen ? 'open' : 'responsive'}`}>
+      <nav className='navbar'>
+        <a href="#home" className="logo"> 
+          <span className="pre-logo">{isNavOpen && <BsChevronLeft/>}</span>
+          <Link to="home" smooth={true} duration={1000}>navidasaman</Link>
+          <span className="pre-logo">{isNavOpen && <BsChevronRight/>}</span>
+        </a>
+        <ul className={`${isNavOpen ? 'open' : 'responsive'}`}>
+          {links.map((link, index) => (
+            <li key={index} className="nav-items">
+              <Link to={link.ref} smooth={true} duration={1000} onClick={() => scrollTo(eval(link.ref))}>{link.text}</Link>
+            </li>
+          ))}
+        </ul>
+        <div>
+          <button className="toggle-btn" onClick={toggleNav}>{isNavOpen ? <BsList /> : <BsXLg />}</button>
+        </div>
+      </nav>
+    </div> 
+  );
+};
+
+export default Navbar;
