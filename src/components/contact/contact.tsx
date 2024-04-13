@@ -56,7 +56,7 @@ function Contact() {
 				></textarea>
 				<button className="formButton" type='submit'>Contact me</button>
 			</form>
-			<Lottie animationData={envelope} style={{ width: "40%" }} />
+			<Lottie animationData={envelope} style={{ width: "30%"}} />
 		</div>
 	)
 }
