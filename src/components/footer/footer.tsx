@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
             <div className="copyRightContainer">
                 <div className="copyrightNotice">
-                    Navida Saman - 2023
+                    Navida Saman - 2024
                 </div>
             </div>
         </div>
