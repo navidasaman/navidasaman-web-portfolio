@@ -97,7 +97,7 @@ $secondary-color: aqua;
         margin:auto;
         cursor: pointer;
         @include font-scss;
-        border-radius: 5px;
+        border-radius: 50px;
         background: linear-gradient(15deg,aqua, aquamarine, #1b2735, #090a0f) no-repeat;
         background-size: 300%;
         color: black;
