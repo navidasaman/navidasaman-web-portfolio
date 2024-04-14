@@ -59,7 +59,7 @@ export default function About() {
           <span className="words"> 
             {word}
           </span>
-          place to browse, enhancing user experience through effective design and pleasant experiences by bridging the gap between frontend and backend technologies to leave a lasting impression and bringing ideas to life.</div>
+          place to browse, enhancing user experience through effective design and pleasant experiences by bridging the gap between frontend- and backend technologies to leave a lasting impression and bringing ideas to life.</div>
         <div className="info">
           <img src={me} className="me" alt="picture of me" />
           <p>Navida Saman</p>
