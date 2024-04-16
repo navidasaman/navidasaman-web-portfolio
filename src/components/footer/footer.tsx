@@ -2,6 +2,8 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import './footer.scss'
 
 export default function Footer() {
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
 
     const handleLinkedInLink = () => {
         window.open("https://www.linkedin.com/in/navidasaman/", "_blank", "noopener noreferrer");
@@ -20,7 +22,7 @@ export default function Footer() {
         </div>
             <div className="copyRightContainer">
                 <div className="copyrightNotice">
-                    Navida Saman - 2024
+                    Navida Saman - {currentYear}
                 </div>
             </div>
         </div>
