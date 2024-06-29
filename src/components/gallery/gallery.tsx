@@ -11,6 +11,7 @@ import parallaxeffect from "./img/f.png";
 import landingpage from "./img/b.png";
 import thoughtsquare from "./img/ts.png";
 import employeeManagementSystem from "./img/g.png";
+import javamultithreading from "./img/h.png";
 import { BsGithub, BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
@@ -54,6 +55,11 @@ const projects = [
 		image: thoughtsquare,
 		link: "https://thought-square.vercel.app/",
 		title: "Thought Square",
+	},
+	{
+		image: javamultithreading,
+		link: "https://github.com/navidasaman/Multithreading-Java-app",
+		title: "Java Multithreading App",
 	},
 ];
 
