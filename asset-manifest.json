@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/navidasaman-web-portfolio/static/css/main.0a14b7d8.css",
-    "main.js": "/navidasaman-web-portfolio/static/js/main.ed4db713.js",
+    "main.js": "/navidasaman-web-portfolio/static/js/main.93ca7a99.js",
     "static/js/787.bea73f34.chunk.js": "/navidasaman-web-portfolio/static/js/787.bea73f34.chunk.js",
     "static/media/linkedinbw.png": "/navidasaman-web-portfolio/static/media/linkedinbw.b262192c6cf0acea472e.png",
     "static/media/ts.png": "/navidasaman-web-portfolio/static/media/ts.5ba28c7c18b83e431012.png",
@@ -9,6 +9,7 @@
     "static/media/g.png": "/navidasaman-web-portfolio/static/media/g.31eb4ae25d503b11f570.png",
     "static/media/a.png": "/navidasaman-web-portfolio/static/media/a.3c534cd47ecd1ef147a0.png",
     "static/media/f.png": "/navidasaman-web-portfolio/static/media/f.bb683e271b5722579450.png",
+    "static/media/playerdata.png": "/navidasaman-web-portfolio/static/media/playerdata.104d155e099eae6e51d3.png",
     "static/media/c.png": "/navidasaman-web-portfolio/static/media/c.8ab0510ba211ebfb6a05.png",
     "static/media/b.png": "/navidasaman-web-portfolio/static/media/b.56fe5222dec7c05ea2e7.png",
     "static/media/d.png": "/navidasaman-web-portfolio/static/media/d.6f28b8a8b05285dedced.png",
@@ -21,11 +22,11 @@
     "static/media/cursor32.svg": "/navidasaman-web-portfolio/static/media/cursor32.5db46480fdd3cc5731f4.svg",
     "index.html": "/navidasaman-web-portfolio/index.html",
     "main.0a14b7d8.css.map": "/navidasaman-web-portfolio/static/css/main.0a14b7d8.css.map",
-    "main.ed4db713.js.map": "/navidasaman-web-portfolio/static/js/main.ed4db713.js.map",
+    "main.93ca7a99.js.map": "/navidasaman-web-portfolio/static/js/main.93ca7a99.js.map",
     "787.bea73f34.chunk.js.map": "/navidasaman-web-portfolio/static/js/787.bea73f34.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a14b7d8.css",
-    "static/js/main.ed4db713.js"
+    "static/js/main.93ca7a99.js"
   ]
 }
