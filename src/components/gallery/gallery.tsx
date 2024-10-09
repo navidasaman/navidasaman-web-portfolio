@@ -12,6 +12,7 @@ import landingpage from "./img/b.png";
 import thoughtsquare from "./img/ts.png";
 import employeeManagementSystem from "./img/g.png";
 import javamultithreading from "./img/h.png";
+import playerdata from "./img/playerdata.png";
 import { BsGithub, BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
@@ -60,6 +61,11 @@ const projects = [
 		image: javamultithreading,
 		link: "https://github.com/navidasaman/Multithreading-Java-app",
 		title: "Java Multithreading App",
+	},	
+	{
+		image: playerdata,
+		link: "https://github.com/navidasaman/PlayerData",
+		title: "Player Data System",
 	},
 ];
 
